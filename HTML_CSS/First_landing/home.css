@@ -1,0 +1,12 @@
+.table {
+    border: 2px;
+    color:blueviolet;
+}
+
+[colspan] {
+    color:blue;
+}
+#header {
+    background-color:darkgrey;
+    color:aqua;
+}

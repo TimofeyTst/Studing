@@ -1,0 +1,6 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory 't:/Projects/C++/VS_Code_C++'
+make.exe: Leaving directory 't:/Projects/C++/VS_Code_C++'
+ 
+make.exe: *** No targets specified and no makefile found.  Stop.
+

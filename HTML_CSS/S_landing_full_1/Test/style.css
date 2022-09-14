@@ -1,0 +1,9 @@
+* 
+{
+    color:blueviolet;
+}
+
+body ul > *
+{
+    color:green;
+}

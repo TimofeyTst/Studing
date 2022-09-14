@@ -1,0 +1,8 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory 't:/Projects/C++/VS_Code_C++/TeleBot'
+g++ -c -o main.o main.cpp
+g++ -o telegram_bot main.o -lpthread --std=c++14 -I/usr/local/include -lTgBot -lboost_system -lssl -lcrypto
+rm -rf *.o
+./telegram_bot
+make.exe: Leaving directory 't:/Projects/C++/VS_Code_C++/TeleBot'
+ 

@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    min-height: 100vh;
+    background: linear-gradient(#2b1055, #7597de);
+    overflow-x: hidden;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding:  6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover , 
+.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+section
+{
+    position: relative;
+    width:  100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before
+{
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+}
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img#moon
+{
+    mix-blend-mode: screen;/*Не понял как так оно исчезло*/
+}
+section img#mountains_front
+{
+    z-index: 10;
+}
+  
+#maintext
+{
+    position: absolute;
+    right: -350px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw; 
+    z-index: 9;
+    transform: translateY(100px);
+}
+#btn
+{
+    text-decoration: none;
+    display: inline-block ;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background:#fff ;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+}
+.simple_text
+{
+    position: relative;
+    padding: 100px;
+    background: #1c0522 ;
+}
+.simple_text h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.simple_text p
+{
+     font-size: 1em;
+     color: #fff;
+}
+
+.NeonLights body
+{
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+.NeonLights ul
+{
+    z-index: 50000;
+    position: absolute;
+    top: 670px;
+    Left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+}
+.NeonLights ul li
+{
+    position: relative;
+    list-style: none;
+    float: left;
+    margin: 0 40px;
+    height: 80px;
+    width: 10px;
+    background: #fff;
+}
+
+.NeonLights ul li::before
+{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: #262626;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.NeonLights ul li:after
+{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: #262626;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.NeonLights ul li:nth-child(1)
+{
+    background: #ffd0d0;
+    box-shadow: 0 0 80px #f00, 0 0 80px #f00, 0 0 80px #f00,
+    0 0 80px #f00;
+}
+.NeonLights ul li:nth-child(2)
+{
+    background: #ffffd7;
+    box-shadow: 0 0 80px #ff0, 0 0 80px #ff0, 0 0 80px #ff0,
+    0 0 80px #ff0;
+}
+.NeonLights ul li:nth-child(3)
+{
+    background: #bffbbf;
+    box-shadow: 0 0 80px #0f0, 0 0 80px #0f0, 0 0 80px #0f0,
+    0 0 80px #0f0;
+}
+.NeonLights ul li:nth-child(4)
+{
+    background: #acffff;
+    box-shadow: 0 0 80px #0ff, 0 0 80px #0ff, 0 0 80px #0ff,
+    0 0 80px #0ff;
+}
+.NeonLights ul li:nth-child(5)
+{
+    background: #bebeff;
+    box-shadow: 0 0 80px #00f, 0 0 80px #00f, 0 0 80px #00f,
+    0 0 80px #00f;
+}
+.NeonLights ul li:nth-child(6)
+{
+    background: #ffadff;
+    box-shadow: 0 0 80px #f0f, 0 0 80px #f0f, 0 0 80px #f0f,
+    0 0 80px #f0f;
+}
+.NeonLights ul li:hover
+{
+    background: #888888;
+    box-shadow: none;
+}

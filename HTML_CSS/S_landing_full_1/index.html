@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Iron Man - scrolling | Vith JS </title>
+        <link rel="stylesheet" type="text/css" 
+        href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <a href="#" class="logo">logo</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Study</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="NeonLights">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <section>
+            <img src="images\stars.png" id="stars">
+            <img src="images\moon.png" id="moon">
+            <img src="images\mountains_behind.png" id="mountains_behind">
+            <h2 id="maintext">Moon Light</h2>
+            <a href="#simple_text" id="btn">Explore</a>
+            <img src="images\mountains_front.png" id="mountains_front">
+        </section>
+        <div class="simple_text" id="simple_text">
+            <h2>This is a place for Your text</h2>
+            <p>In this lines You can put almost all. History of life. <br><br> Way to be a Millionare. <br><br> I said, almost all. Like this.<br><br>And in this place too.</p>
+        </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let maintext = document.getElementById('maintext');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+            let header = document.querySelector('header');
+
+             window.addEventListener('scroll', function(){
+                 let value = window.scrollY;
+                 stars.style.left = value * 0.25 + 'px';
+                 moon.style.top = value + 'px';
+                 mountains_behind.style.top = value * 0.5 + 'px';
+                 mountains_front.style.top = value * 0 + 'px';
+                 maintext.style.marginRight = value * 4 + 'px';  
+                 maintext.style.marginTop = value * 1.5 + 'px';
+                 btn.style.marginTop = value * 1.5 + 'px'; 
+                 header.style.top = value * 0.5 + 'px';
+             })
+        </script>
+
+    </body>
+</html>
